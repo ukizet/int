@@ -1,75 +1,116 @@
-:root {
-  --primay: black;
-  --bg-primay: white;
+$bg-primary: white;
+$bg-secondary: #343434;
 
-  --link: #2a0b0b;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  > button {cursor: pointer;}
+  overflow: hidden;
 }
 
 .App {
-  text-align: center;
-}
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  background-color: $bg-primary;
 
-p {
-  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  font-size: 3rem;
-}
-
-.body {
-  margin: 20px 0 10px;
-  font-size: 0.9rem;
-}
-
-button {
-  outline: none;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 35px;
-
-  background: #845ec2;
-  color: white;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  height: 10vh;
+  width: 100%;
+  > div {
+    padding: 0px 5rem;
+    @media (max-width: 950px) {
+      padding: 0px 0px;
+    }
   }
+  flex-shrink: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerTop {
+  height: 50%;
+  width: 100%;
+
+  background-color: $bg-secondary;
+
+  color: $bg-primary;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
 
-  background: var(--bg-primay);
-  color: var(--primay);
-}
-
-.App-link {
-  color: #61dafb;
-  color: var(--link);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  > button {
+    color: $bg-primary;
+    &:hover {
+      background-color: $bg-primary;
+      color: $bg-secondary;
+    }
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.headerMain {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  > button {
+    width: fit-content;
+  }
+}
+
+.category {
+  margin-right: 1rem;
+  @media (max-width: 950px) {
+    margin-right: 0;
+  }
+}
+
+.logo {
+  margin-right: 4rem;
+  @media (max-width: 950px) {
+    margin-right: 0;
+  }
+}
+
+.login {
+  margin-left: auto;
+}
+
+.help {
+  margin-left: 2rem;
+}
+
+.search {
+  height: 100%;
+
+  margin-left: auto;
+  
+  display: flex;
+  align-items: center;
+
+  > input {
+    width: 5rem;
+    height: 100%;
+  }
+}
+
+.main {
+  height: 100rem;
+  width: 100%;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+
+  margin-top: auto;
+  flex-shrink: 0;
 }
