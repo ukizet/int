@@ -1,0 +1,25 @@
+$bg-primary: white;
+$bg-secondary: #343434;
+
+.carousel {
+  color: $bg-primary;
+  background-color: $bg-secondary;
+  background-image: url('https://s3-alpha-sig.figma.com/img/d92e/60fa/f1eafcc65076de7a1d51bc0416146be1?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DyQCmZzu8k15oyvHBSNNSveGpgwxnx-3cBlK6kifigPv-u1bwnezg3b4UncB-ATVQSdr6yN~E84uaPF5ufAtKrZNWTNMM75FIEkCOjwMElKJkZ5ofZ1NSrgG2kxw2OFymPlntwyYyPvIr2xTrgsyfZlgeu50vhunpGv4OipzgODvCQsADuMPeMfEw2wvGG8CjndWSyWy1UOHIhJK5FFW3bztQ2RDdf4elUoQ1lCQcvshhe4XKwGy5TQJUHvVcXNywSFXWBKC513IziRPm2-CE6YJJuIf1lpIuWtj1anI-oczYkgywsdG5s~MgkoOYCt5xFrqW8W4KzHvyv1ahTEwkw__');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  justify-content: space-between !important;
+  padding: 0 2rem !important;
+}
+
+.pro {
+  background-color: black;
+}
+
+.carouselTitle {
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

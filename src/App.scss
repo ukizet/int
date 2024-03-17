@@ -31,48 +31,6 @@ $bg-secondary: #343434;
   width: 100%;
 }
 
-.header {
-  min-height: 10vh;
-  > div {
-    padding: 0px 5rem;
-    @media (max-width: 950px) {
-      padding: 0px 0px;
-    }
-  }
-}
-
-.headerTop {
-  height: 50%;
-  width: 100%;
-
-  background-color: $bg-secondary;
-
-  color: $bg-primary;
-
-  display: flex;
-  align-items: center;
-
-  > button {
-    color: $bg-primary;
-    &:hover {
-      background-color: $bg-primary;
-      color: $bg-secondary;
-    }
-  }
-}
-
-.navHeader {
-  height: 50%;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-
-  > button {
-    width: fit-content;
-  }
-}
-
 .bg-black {
   background-color: $bg-secondary;
   color: $bg-primary;
@@ -84,35 +42,6 @@ $bg-secondary: #343434;
     margin-right: 0;
   }
   color: inherit;
-}
-
-.logo {
-  margin-right: 4rem;
-  @media (max-width: 750px) {
-    margin-right: 0;
-  }
-}
-
-.login {
-  margin-left: auto;
-}
-
-.help {
-  margin-left: 2rem;
-}
-
-.search {
-  height: 100%;
-
-  margin-left: auto;
-
-  display: flex;
-  align-items: center;
-
-  > input {
-    width: 5rem;
-    height: 100%;
-  }
 }
 
 .main {
@@ -135,69 +64,10 @@ $bg-secondary: #343434;
   margin-top: auto;
 }
 
-.carousel {
-  color: $bg-primary;
-  background-color: $bg-secondary;
-  background-image: url('https://s3-alpha-sig.figma.com/img/d92e/60fa/f1eafcc65076de7a1d51bc0416146be1?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DyQCmZzu8k15oyvHBSNNSveGpgwxnx-3cBlK6kifigPv-u1bwnezg3b4UncB-ATVQSdr6yN~E84uaPF5ufAtKrZNWTNMM75FIEkCOjwMElKJkZ5ofZ1NSrgG2kxw2OFymPlntwyYyPvIr2xTrgsyfZlgeu50vhunpGv4OipzgODvCQsADuMPeMfEw2wvGG8CjndWSyWy1UOHIhJK5FFW3bztQ2RDdf4elUoQ1lCQcvshhe4XKwGy5TQJUHvVcXNywSFXWBKC513IziRPm2-CE6YJJuIf1lpIuWtj1anI-oczYkgywsdG5s~MgkoOYCt5xFrqW8W4KzHvyv1ahTEwkw__');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  justify-content: space-between !important;
-  padding: 0 2rem !important;
-}
-
-.carouselTitle {
-  width: 13rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.giftToFriends {
-  > * {
-    width: 50%;
-  }
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-.hottestProducts {
-  flex-direction: column;
-}
-
 .hottestProductsHeader {
   display: flex;
   width: inherit;
   margin-bottom: auto;
-}
-
-.counter {
-  margin-left: auto;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 20rem;
-  flex-grow: 1;
-  border-bottom: 1px solid #343434;
-}
-
-.card {
-  width: 33%;
-
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-
-  flex-grow: 1;
 }
 
 .flex-column {
@@ -212,16 +82,6 @@ $bg-secondary: #343434;
 
 .border-black {
   border: 1px solid #343434;
-}
-
-.mailingList {
-  padding: 0 15rem !important;
-}
-
-.cardsHeader {
-  display: flex;
-  width: inherit;
-  margin-bottom: auto;
 }
 
 .flex {
@@ -241,25 +101,10 @@ $bg-secondary: #343434;
   color: inherit;
 }
 
-.emailLabel {
-  border-radius: 2rem;
-  border: 1px solid #343434;
-  width: 100%;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.emailInput {
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-}
-
-.subscribe {
-  border-radius: inherit;
 }
 
 .cardImg {
@@ -271,10 +116,6 @@ $bg-secondary: #343434;
 
 .relative {
   position: relative;
-}
-
-.cardImgDiv {
-  flex-grow: 1;
 }
 
 .imgWrapper {
