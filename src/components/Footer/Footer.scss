@@ -1,12 +1,27 @@
 .footer {
   margin-top: auto;
+  height: fit-content;
 }
 
 .bottomFooter {
   margin-top: auto;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
 }
 
 .bottomNav {
   color: inherit;
+}
+
+.normalFooter {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid #343434;
+  > div {
+    min-width: 10.6rem;
+    min-height: 7.1rem;
+  }
+}
+
+.normalFooterTitle {
+  color: #343434;
 }

@@ -2,9 +2,9 @@ import "./MailingList.scss";
 
 function MailingList() {
   return (
-    <div className="mailingList flex-column">
-      <span>Спіймай акції</span>
-      <span>
+    <div className="mailingList flex-column mainChildren justify-between">
+      <span className="mailingListTitle">Спіймай всі акції!</span>
+      <span className="mailingListDesc middleFont">
         Підписуйся на Email розсилку і отримуй інформацію про всі акції, які
         будуть з`влятись у нашому магазині. А у нас їх багато :D
       </span>

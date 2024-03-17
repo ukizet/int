@@ -10,6 +10,7 @@
 
   justify-content: space-between !important;
   padding: 0 2rem !important;
+  height: 30rem;
 }
 
 .pro {
@@ -17,8 +18,49 @@
 }
 
 .carouselTitle {
-  width: 13rem;
+  min-width: 13rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.slogan {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.8rem;
+
+  width: 29rem;
+  min-height: 12rem;
+}
+
+.nike {
+  width: 25rem;
+  min-height: 2.9rem;
+
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4.8rem;
+}
+
+.discount40 {
+  width: 18.8rem;
+  min-height: 1.8rem;
+
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.discount40wrapper {
+  padding: 0.6rem 1.8rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.onlyWeek {
+  width: fit-content;
+  min-height: 1rem;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }

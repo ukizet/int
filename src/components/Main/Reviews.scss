@@ -8,7 +8,8 @@
 .review {
   padding: 1.5rem;
   border-radius: 1.2rem;
-  margin-right: 1.5rem;
+  width: 16rem;
+  height: 15rem;
 }
 
 .rating {
@@ -18,4 +19,9 @@
 
 .ratingNName {
   margin-left: 1.2rem;
+}
+
+.reviewsWrapper {
+  justify-content: space-between;
+  width: 100%;
 }

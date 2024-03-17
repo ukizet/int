@@ -2,14 +2,16 @@ import "./GiftToFriends.scss";
 
 function GiftToFriends() {
   return (
-    <div className="giftToFriends">
+    <div className="giftToFriends mainChildren">
       <div>
-        <span>Ми знаємо, що сподобається вашим “великим” друзям!</span>
-        <span>
+        <span className="giftToFriendsTitle">
+          Ми знаємо, що сподобається вашим “великим” друзям!
+        </span>
+        <span className="giftToFriendsDesc middleFont">
           Обирай подарунок своїм друзями бодібілдерам із нашою новою колекцію
           термобілизни “Big warm”
         </span>
-        <button type="button" className="bg-black">
+        <button type="button" className="bg-black giftToFriendsButton">
           До каталогу
         </button>
       </div>

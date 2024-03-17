@@ -6,19 +6,63 @@
   height: inherit;
   flex-grow: 1;
   border-bottom: 1px solid #343434;
+
+  // margin-top: 2rem;
 }
 
 .cardsHeader {
   display: flex;
   width: inherit;
-  margin-bottom: auto;
+  margin-bottom: 2rem;
+}
+
+.green {
+  color: #4aaa4e;
+}
+
+.cardTypeNProp {
+  color: #626262;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.cardImgNButton {
+  width: 23rem;
+  height: 27rem;
+
+  > * {
+    position: absolute;
+  }
+
+  > button {
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 .cardImg {
-  width: 23rem;
-  height: 27rem;
+  width: inherit;
+  height: inherit;
   object-fit: scale-down;
   object-position: center;
+}
+
+.leftArrowTail {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+
+.cost {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
 }
 
 .counter {
@@ -26,14 +70,12 @@
 }
 
 .card {
-  width: 33%;
+  width: fit-content;
 
   display: flex;
   justify-content: start;
   align-items: flex-start;
   flex-direction: column;
-
-  flex-grow: 1;
 }
 
 .hottestProducts {

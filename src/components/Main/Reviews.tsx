@@ -25,7 +25,7 @@ function Review({
 
 function Reviews() {
   return (
-    <div className="reviews flex-column">
+    <div className="reviews flex-column mainChildren">
       <CardsHeader title="Відгуки" />
       <div className="reviewsWrapper flex grow">
         {[...Array(4)].map((_, i) => (

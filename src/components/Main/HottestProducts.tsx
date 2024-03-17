@@ -17,20 +17,20 @@ function Card({
 }: { img: string; title: string; type: string; prop: string; cost: number }) {
   return (
     <div className="card">
-      <div className="relative">
+      <div className="relative cardImgNButton">
         <img src={img} alt="BeatifulPerson" className="cardImg" />
         <button type="button">
           <img src={Heart} alt="Loved" />
         </button>
       </div>
       <button type="button">
-        <span>{title}</span>
+        <span className="cardTitle">{title}</span>
       </button>
-      <div className="flex-column">
-        <span>{type}</span>
+      <div className="flex-column cardTypeNProp">
+        <span className="cardType">{type}</span>
         <span>{prop}</span>
       </div>
-      <span>{cost} ГРН.</span>
+      <span className="green cost">{cost} ГРН.</span>
     </div>
   );
 }
@@ -40,9 +40,9 @@ export function CardsHeader({ title }: { title: string }) {
     <div className="cardsHeader">
       <span>{title}</span>
       <span className="counter">01 / 03</span>
-      <div>
+      <div className="arrowsWithTails">
         <button type="button">
-          <img src={LeftArrowTail} alt="LeftArrow" />
+          <img src={LeftArrowTail} alt="LeftArrow" className="leftArrowTail" />
         </button>
         <button type="button">
           <img src={RightArrowTail} alt="RightArrow" />
@@ -54,28 +54,28 @@ export function CardsHeader({ title }: { title: string }) {
 
 function HottestProducts() {
   return (
-    <div className="hottestProducts flex-column">
-      <CardsHeader title="Найгарячіщі" />
+    <div className="hottestProducts flex-column mainChildren">
+      <CardsHeader title="Найгарячіщі товари" />
       <div className="cards">
         <Card
           img={WhiteTermo}
-          title="Термобілизна"
-          type="Для чолов"
+          title="Термобілизна для бодібілдерів"
+          type="Для чоловіків"
           prop="2 кольори"
           cost={4000}
         />
         <Card
           img={Maika}
-          title="Майка"
+          title="Майка для бодібілдерів"
           type="Для жінок"
           prop="2 кольори"
           cost={1100}
         />
         <Card
           img={Chain}
-          title="Ланцюжок"
-          type="Аксес"
-          prop="2 кольори"
+          title="Ланцюжок для бодібілдерів"
+          type="Аксесуари"
+          prop="30 кг."
           cost={2000}
         />
       </div>
