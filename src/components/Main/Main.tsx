@@ -4,6 +4,8 @@ import HottestProducts from "./HottestProducts";
 import MailingList from "./MailingList";
 import Reviews from "./Reviews";
 
+import "./Main.scss";
+
 function Main() {
   return (
     <div className="main">

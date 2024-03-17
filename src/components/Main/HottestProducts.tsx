@@ -1,6 +1,8 @@
 import "./HottestProducts.scss";
 
 import Heart from "/src/img/Heart.svg";
+import LeftArrowTail from "/src/img/LeftArrowTail.svg";
+import RightArrowTail from "/src/img/RightArrowTail.svg";
 
 import Maika from "/src/img/Maika.png";
 import WhiteTermo from "/src/img/WhiteTermo.png";
@@ -15,7 +17,7 @@ function Card({
 }: { img: string; title: string; type: string; prop: string; cost: number }) {
   return (
     <div className="card">
-      <div className="relative grow">
+      <div className="relative">
         <img src={img} alt="BeatifulPerson" className="cardImg" />
         <button type="button">
           <img src={Heart} alt="Loved" />
@@ -40,10 +42,10 @@ export function CardsHeader({ title }: { title: string }) {
       <span className="counter">01 / 03</span>
       <div>
         <button type="button">
-          <img src="" alt="LeftArrow" />
+          <img src={LeftArrowTail} alt="LeftArrow" />
         </button>
         <button type="button">
-          <img src="" alt="RightArrow" />
+          <img src={RightArrowTail} alt="RightArrow" />
         </button>
       </div>
     </div>

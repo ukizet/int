@@ -1,3 +1,5 @@
+import "./NavBar.scss";
+
 function NavBar({ className }: { className: string }) {
   return (
     <div className={className}>
