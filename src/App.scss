@@ -7,12 +7,14 @@ $bg-secondary: #343434;
   margin: 0;
   border: 0;
   background-color: transparent;
-  > button {cursor: pointer;}
+  > button {
+    cursor: pointer;
+  }
   overflow: hidden;
 }
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow-y: auto;
 
@@ -20,6 +22,11 @@ $bg-secondary: #343434;
 
   display: flex;
   flex-direction: column;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
 }
 
 .header {
@@ -31,7 +38,6 @@ $bg-secondary: #343434;
       padding: 0px 0px;
     }
   }
-  flex-shrink: 0;
 }
 
 .headerTop {
@@ -54,7 +60,7 @@ $bg-secondary: #343434;
   }
 }
 
-.headerMain {
+.nav {
   height: 50%;
   width: 100%;
 
@@ -68,14 +74,14 @@ $bg-secondary: #343434;
 
 .category {
   margin-right: 1rem;
-  @media (max-width: 950px) {
+  @media (max-width: 700px) {
     margin-right: 0;
   }
 }
 
 .logo {
   margin-right: 4rem;
-  @media (max-width: 950px) {
+  @media (max-width: 750px) {
     margin-right: 0;
   }
 }
@@ -92,7 +98,7 @@ $bg-secondary: #343434;
   height: 100%;
 
   margin-left: auto;
-  
+
   display: flex;
   align-items: center;
 
@@ -103,7 +109,7 @@ $bg-secondary: #343434;
 }
 
 .main {
-  height: 100rem;
+  height: 20vh;
   width: 100%;
 }
 
@@ -111,6 +117,9 @@ $bg-secondary: #343434;
   height: 10vh;
   width: 100%;
 
+  // position: relative;
   margin-top: auto;
-  flex-shrink: 0;
+  clear: both;
+
+  // bottom: 0;
 }

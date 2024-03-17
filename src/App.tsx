@@ -17,7 +17,7 @@ function App() {
             Увійти/Зареєструватися
           </button>
         </div>
-        <div className="headerMain">
+        <div className="nav">
           <button type="button" className="logo">
             IGNAT
           </button>
